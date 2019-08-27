@@ -1,0 +1,95 @@
+/Stream API
+//if we want to process object from collections then we need to go streams
+
+//filter()
+/*import java.util.*;
+import java.util.stream.*;
+class Test1
+{
+	public static void main(String[] args){
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(10);
+		al.add(35);
+		al.add(78);
+		al.add(100);
+		al.add(63);
+		System.out.println(al);
+		List l=al.stream().filter(i->i%2==0).collect(Collectors.toList());
+		System.out.println(l);
+	}
+}*/
+
+
+//map()
+/*import java.util.*;
+import java.util.stream.*;
+class Test1
+{
+	public static void main(String[] args){
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(10);
+		al.add(35);
+		al.add(78);
+		al.add(100);
+		al.add(63);
+		System.out.println(al);
+		List l=al.stream().map(i->i+5).collect(Collectors.toList());
+		System.out.println(l);
+	}
+}*/
+
+//count
+/*import java.util.*;
+import java.util.stream.*;
+class Test1
+{
+	public static void main(String[] args){
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(10);
+		al.add(35);
+		al.add(78);
+		al.add(100);
+		al.add(63);
+		System.out.println(al);
+		Long l=al.stream().filter(i->i<35).count();
+		System.out.println(l);
+	}
+}*/
+
+//sorted
+/*import java.util.*;
+import java.util.stream.*;
+class Test1
+{
+	public static void main(String[] args){
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(10);
+		al.add(35);
+		al.add(78);
+		al.add(100);
+		al.add(63);
+		System.out.println(al);
+		List l=al.stream().sorted().collect(Collectors.toList());
+		System.out.println(l);
+	}
+}*/
+
+//min and max
+import java.util.*;
+import java.util.stream.*;
+class Test1
+{
+	public static void main(String[] args){
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(10);
+		al.add(35);
+		al.add(78);
+		al.add(100);
+		al.add(63);
+		System.out.println(al);
+		Integer i=al.stream().min((i1,i2)->i1.compareTo(i2)).get();
+		Integer j=al.stream().max((i1,i2)->i1.compareTo(i2)).get();
+		System.out.println(i);
+		System.out.println(j);
+	}
+}
